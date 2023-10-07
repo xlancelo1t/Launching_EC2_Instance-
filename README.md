@@ -8,6 +8,7 @@ Run the *"apt update"* command to update i.e if AWS-CLI is already installed, an
 input “*aws --version*” to confirm version installed, and “*aws configure*” to configure AWS CLI
 
 ![Alt text](configure.png)
+![configure](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/bf45caad-5e3a-458f-943b-26c5687453ed)
 
 ## **Create key pair**
 input *"aws ec2 create-key-pair --key-name (keypair-Name) --query 'KeyMaterial' –output text > (keypair-Name.pem)”* command
