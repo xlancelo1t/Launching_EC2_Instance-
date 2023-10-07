@@ -27,6 +27,7 @@ input *“aws ec2 create-security-group --group-name (security grp Name) --descr
 ![launch instance](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/1aee236f-cba8-4fca-b6da-6c03035b57b9)
 
 ![launchinstance](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/191e337c-b56e-49e6-9a08-42bc221ef2ae)
+
 you can confirm the instance launch on your AWS Console 
 
 ## **View running Instance**
@@ -40,6 +41,7 @@ To terminate an instance on the AWS-CLI,  input *“aws ec2 terminate-instances 
 ![terminateinstance](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/484403aa-22e1-4b6a-a9f8-b59eee2a7ca1)
 
 ![terminateinstance1](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/fd30fc93-03c6-4832-9d76-77b4bc215eda)
+
 you can confirm the termination on your AWS console aswell
 
 ## **Delete keypair and security group**
