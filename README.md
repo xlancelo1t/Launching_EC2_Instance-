@@ -2,27 +2,27 @@
 A prerequisite for launching an EC2 Instance is having the **AWS CLI** installed in your computer.
 
 ## **Installing AWS-CLI**
-Run the *"apt update"* command to update i.e if AWS-CLI is already installed, and *"apt install awscli -y"* command to install
+Run the `apt update` command to update i.e if AWS-CLI is already installed, and `apt install awscli -y` command to install
 
 ## **Configure AWS CLI using IAM Credentials**
-input “*aws --version*” to confirm version installed, and “*aws configure*” to configure AWS CLI
+input `aws --version` to confirm version installed, and `aws configure` to configure AWS CLI
 
-![configure](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/bf45caad-5e3a-458f-943b-26c5687453ed)
+![configure](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/c4039d11-96d8-4552-9755-479afd2b26fd)
 
 ## **Create key pair**
-input *"aws ec2 create-key-pair --key-name (keypair-Name) --query 'KeyMaterial' –output text > (keypair-Name.pem)”* command
+input `aws ec2 create-key-pair --key-name (keypair-Name) --query 'KeyMaterial' –output text > (keypair-Name.pem)` command
 
-![keypair](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/2dbeac8d-1f34-4bd0-a3a8-b87af7a45b45)
+![keypair](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/d7526ceb-f8ca-426c-8356-56c47ae39465)
 
 ## **Create Security group**
-input *“aws ec2 create-security-group --group-name (security grp Name) --description (Description)*
+input `aws ec2 create-security-group --group-name (security grp Name) --description (Description)`
 
-![securitygroups](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/ab9b98d8-24d9-43ba-852b-bc1587e24a28)
+![securitygroups](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/d6f22c8c-fa73-46d2-abff-ee1b28366e36)
 
 ## **Launch instance**
-**Add inbound rule:** input *“aws ec2 authorize-security-group-ingress --group-id (security group Id) --protocol tcp --port (port Number) --cidr (ip address)”* command
+**Add inbound rule:** input `aws ec2 authorize-security-group-ingress --group-id (security group Id) --protocol tcp --port (port Number) --cidr (ip address)` command
 
-**Launch instance:** *“aws ec2 run-instances --image-id (ami-Id) --count 1 --instance-type (type) --keyname (keypair-Name) --security-groups (security grp Name)“* command
+**Launch instance:** `aws ec2 run-instances --image-id (ami-Id) --count 1 --instance-type (type) --keyname (keypair-Name) --security-groups (security grp Name)` command
 
 ![launch instance](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/1aee236f-cba8-4fca-b6da-6c03035b57b9)
 
@@ -31,12 +31,12 @@ input *“aws ec2 create-security-group --group-name (security grp Name) --descr
 you can confirm the instance launch on your AWS Console 
 
 ## **View running Instance**
-to view running inctances on CLI, input *“aws ec2 describe-instances“* command
+to view running inctances on CLI, input `aws ec2 describe-instances` command
 
 ![viewinstance](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/85ea3c03-787d-4a41-8818-bd0915082103)
 
 ## **Terminate running instance**
-To terminate an instance on the AWS-CLI,  input *“aws ec2 terminate-instances --instance-ids (Instance-Id)“* command
+To terminate an instance on the AWS-CLI,  input `aws ec2 terminate-instances --instance-ids (Instance-Id)` command
 
 ![terminateinstance](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/484403aa-22e1-4b6a-a9f8-b59eee2a7ca1)
 
@@ -45,8 +45,8 @@ To terminate an instance on the AWS-CLI,  input *“aws ec2 terminate-instances 
 you can confirm the termination on your AWS console aswell
 
 ## **Delete keypair and security group**
-**Delete keypair:** input the *“aws ec2 delete-key-pair --key-name (keypair-Name)“* command
-**Delete security group:** *“aws ec2 delete-security-group --group-name (security grp Name)“*
+**Delete keypair:** input the `aws ec2 delete-key-pair --key-name (keypair-Name)` command
+**Delete security group:** `aws ec2 delete-security-group --group-name (security grp Name)`
 
 ![deletekeypairandsecuritygroup](https://github.com/xlancelo1t/Launching_EC2_Instance-/assets/144808452/dbf5df8a-ecd9-47b8-b331-58a0f626f80e)
 
